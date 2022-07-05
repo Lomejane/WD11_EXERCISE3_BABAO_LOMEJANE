@@ -1,0 +1,484 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url('Tropical.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.nav-bar {
+    display: flex;
+    width: 100%;
+    height: 90px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    position: fixed;
+    border-bottom: 1px solid black;
+}
+
+.title-nav h1 {
+    font-family: 'Arima', cursive;
+    margin-left: 50px;
+    font-size: 60px;
+}
+
+h1 span {
+    font-family: 'Arima', cursive;
+}
+
+.nav-links ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 600px;
+    height: 70px;
+}
+
+.link {
+    font-size: 18px;
+    list-style-type: none;
+    color: black;
+    text-decoration: none;
+}
+
+.link:hover {
+    transition: 0.3s;
+    font-size: 20px;
+    color: lightskyblue;
+    border-bottom: 3px solid lightskyblue;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 1200px;
+}
+
+.home-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-text h1 {
+    font-family: 'Arima', cursive;
+    font-size: 80px;
+    line-height: 70px;
+}
+
+.home-text p {
+    font-size: 20px;
+
+}
+
+.searchbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 15px;
+    height: 65px;
+    width: 640px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 30px
+}
+
+.searchbar-container img {
+    height: 30px;
+}
+
+.searchbar-container img:hover {
+    cursor: pointer;
+}
+
+.searchbar-container input {
+    height: 100%;
+    width: 550px;
+    font-size: 25px;
+    padding-left: 20px;
+    border: none;
+    outline: none;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    padding-top: 120px;
+    width: 1200px;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 50px;
+    height: 400px;
+    width: 1200px;
+    border: 1px solid black;
+    box-shadow: 5px 10px 8px rgb(92, 89, 89);
+}
+
+.card img {
+    margin-left: 30px;
+    height: 350px;
+    width: 450px;
+}
+
+.card-text-container {
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    margin: 50px;
+}
+
+.card-text-container h2 {
+    font-size: 35px;
+    margin-top: 20px;
+}
+
+.card-text-container p {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.card a {
+    margin-top: 20px;
+    height: 50px;
+    width: 200px;
+}
+
+.card a button {
+    background-color: lightgreen;
+    border-radius: 10px;
+    height: 50px;
+    width: 200px;
+    font-size: 22px;
+    border: none;
+}
+
+.card a button:hover {
+    cursor: pointer;
+    background-color: lightskyblue;
+    color: white;
+}
+
+#discover {
+    display: flex;
+    flex-direction: column;
+    padding-top: 120px;
+    width: 1200px;
+    height: 100vh;
+}
+
+#discover h2 {
+    font-size: 35px;
+}
+
+.culture-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.culture {
+    margin-top: 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    width: 350px;
+    height: 500px;
+    margin-bottom: 20px;
+}
+
+.culture img {
+    margin-top: 30px;
+    width: 300px;
+    height: 200px;
+}
+
+
+
+.culture-container p {
+    margin-top: 30px;
+    width: 300px;
+}
+.cultures img {
+    margin-top: 30px;
+    width: 300px;
+    height: 200px;
+}
+#help {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    width: 1300px;
+}
+.box {
+    border: 1px solid black;
+    box-shadow: 1px 1px 1px rgb(92, 89, 89);
+}
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: rgb(100, 108, 114);
+    color: black;
+}
+#Food-trip {
+    background-image: url('help.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+}
+table {
+    border-style: inset;
+    border-collapse: collapse;
+    width: 100%;
+  }
+table {
+    padding: 10px;
+}
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #ccecec;
+}
+
+#bg {
+    /* The image used */
+    background-image: url('pexels.jpg');
+  
+    /* Full height */
+    height: 50%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+#bg h1 {
+    color: rgb(3, 3, 3);
+    font-family: 'Poppins', sans-serif;
+   font-size: 40px;
+}
+#bg h2 {
+    color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif
+    font-size 40px;
+}
+
+*{
+    box-sizing: border-box;
+}                  
+.xy {
+justify-content: center;
+}
+#bg h1 {
+    justify-content: center;
+   text-align: center;
+   font-family: 'IBM Plex Serif', serif;
+   font-family: 'Poppins', sans-serif
+}
+.xy .content {
+bottom: 0;
+background: rgb(73, 73, 73); /* Fallback color */
+background: rgba(0, 0, 0, 0.3); /* Black background with 0.5 opacity */
+color: #f1f1f1;
+width: 320px;
+height: 200px;
+padding: 2px;
+}
+#bg span{
+    color: whitesmoke;
+}
+#btn {
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#btn h1 {
+    text-align: center;
+}
+.gallery {
+    margin-top: 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+.gallery img {
+    margin-top: 30px;
+    width: 300px;
+    height: 200px;
+    opacity: 1.6px; 
+    cursor: pointer; 
+   
+} 
+#btn.gallery img {
+    margin-bottom: 50px;
+    padding: 37px;
+    width: 10px;
+    height: 10px;
+    
+  }
+  
+#btn.desc {
+    padding: 15px;
+    text-align: center;
+  }
+ #click-item {
+    text-decoration: none;
+ }
+ #click-item a :hover {
+    background-color: skyblue;
+    border: none;
+    transition: 0.5s;
+ }
+ #sunset {
+    margin: 0;
+    padding: 0;
+ }
+ * {
+    box-sizing: border-box;
+  }
+  
+  .bg-image {
+    /* Full height */
+    height: 100vh; 
+    width: 100vw;
+    
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+ #sunset {
+     height: 90vh;
+     width: 90vw;
+    
+ }
+.img1 { 
+    background-image: url('seasnake.jpg');
+ }
+.img2 {
+     background-image: url('sunset1.jpg'); 
+    }
+.img3 { 
+    background-image: url('snorkeling.jpg');
+ }
+.img4 { 
+    background-image: url("sunset3.jpg");
+ }
+.img5 { 
+    background-image: url("blue\ fish.jpg"); 
+}
+.img6 { 
+    background-image: url("snorkeling2.jpg");
+}
+ .bg-text {
+    font-family: 'IBM Plex Serif', serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(46, 46, 46); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    border: 1px solid #f1f1f1;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+ }
+ body {font-family: Arial, Helvetica, sans-serif;}
+ * {box-sizing: border-box;}
+ 
+ input[type=text], select, textarea {
+   width: 100%;
+   padding: 12px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+   margin-top: 6px;
+   margin-bottom: 16px;
+   resize: vertical;
+ }
+ 
+ input[type=submit] {
+   background-color: #89f0ca;
+   color: rgb(27, 26, 26);
+   padding: 12px 20px;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+ }
+ 
+ input[type=submit]:hover {
+   background-color: rgb(108, 196, 231);
+ }
+ 
+ .container {
+   border-radius: 1px;
+   background-color: gray;
+   padding: 20px;
+ }
+
+footer {
+background-size: 200px;
+background-color: gray;
+ }
+
+ 
+
+ 
+ 
+
+

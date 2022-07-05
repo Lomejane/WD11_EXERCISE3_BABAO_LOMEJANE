@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sample Itinerary</title>
+</head>
+<style>
+    body {
+    background-image: url('help.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+<!---->
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: #333;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width:700px) {
+  html, button {
+    font-size: 56%
+  }
+}
+
+.nav ul {
+  margin: 0;
+}
+
+.nav li {
+  display: inline;
+}
+
+.nav a {
+  display: inline-block;
+  padding: 1.2em;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  background-color: linen;
+  
+}
+.main-nav {
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: lighter;
+}
+
+.main-nav li {
+  padding: 0 5%;
+}
+
+.my-header {
+  background-image: url(https://images.unsplash.com/photo-1594229681794-769400cb28c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyOTQwMTI4Ng&ixlib=rb-1.2.1&q=80&w=400);
+  background-size: cover;
+  padding-bottom: 30px;
+}
+
+.name {
+  text-align: center;
+  margin: 0;
+  font-size: 2em;
+  font-variant: small-caps;
+  color: midnightblue;
+}
+
+.name-large {
+  font-size: 4em;
+}
+
+.click {
+  text-align: center;
+  vertical-align: middle;
+  padding: .7em;
+  cursor: pointer;
+}
+
+.click-header {
+  margin: 0 auto;
+  display: block;
+  border: 2px solid gold;
+  background-color: palegoldenrod;
+  font-weight: lighter;
+}
+
+.click-header a {
+  text-decoration: none;
+}
+
+.click-header:hover {
+  background-color: gold;
+}
+
+.content-section {
+  margin: 1em;
+}
+
+.container {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 0 1.5em;
+}
+
+.section-header {
+  text-align: center;
+  color: midnightblue;
+  font-variant: small-caps;
+  font-size: 1.5em;
+}
+
+.tastings-row {
+  border-bottom: 1px solid navy;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+}
+
+.tastings-row:last-child {
+  border-bottom: none;
+}
+
+.item {
+  padding-right: .5em;
+  display: inline-block;
+}
+
+.date {
+  color: #444;
+  font-weight: bold;
+  width: 23%
+}
+
+.city {
+  width: 16%
+}
+
+.destination {
+  width: 37%
+}
+
+.tastings-click {
+  max-width: 18%
+}
+
+.primary-click {
+  color: white;
+  font-weight: bold;
+  background-color: cornflowerblue;
+  border: none;
+  border-radius: .3em;
+}
+
+.primary-click:hover {
+  background-color: midnightblue;
+}
+
+.primary-click a {
+  text-decoration: none;
+  color: white;
+}
+
+.main-footer {
+  background-image: url(https://images.unsplash.com/photo-1594229681794-769400cb28c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyOTQwMTI4Ng&ixlib=rb-1.2.1&q=80&w=400);
+  background-size: cover;
+  padding: .25em 0;
+}
+
+.main-footer-container {
+  display: flex;
+  align-items: center;
+}
+
+.main-footer-container ul {
+  flex-grow: 1;
+  text-align: end;
+}
+
+.footer-nav li {
+  padding: 0 .5em
+}
+
+.fa-facebook {
+  color: #3b5998;
+}
+
+.fa-youtube {
+  color: #bb0000;
+}
+
+.fa-twitter {
+  color: #55acee;
+}
+*{
+box-sizing: border-box;
+                }
+                
+                body {
+                  font-family: Arial;
+                  font-size: 17px;
+                }
+                
+                .xy {
+                  position: relative;
+                  max-width: 800px;
+                  margin: 0 auto;
+                }
+                
+                
+                
+                .xy .content {
+                  position: absolute;
+                  bottom: 0;
+                  background: rgb(0, 0, 0); /* Fallback color */
+                  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+                  color: #f1f1f1;
+                  width: 500px;
+                  height: 100px;
+                  padding: 20px;
+                }
+
+</style>
+<body>
+    <h1></h1>
+    <table border="1" cellpadding="20">
+        <tr>
+            
+            <th colspan="4">Schedules with Respective Ferry</th>
+            </tr>
+            <tr>
+               <td>From</th>
+                <td>Time</td>
+                <td>Transportation</td>
+                <td>To</td></th>
+           </tr>
+           <tr>
+               <td>Bohol(Tagbilaran)</td>
+               <td>10:30</td>
+               <td>Ocean Jet</td>
+               <td>Siquijor</td>
+           </tr>
+           <tr>
+            <td>Siquijor</td>
+            <td>13:50</td>
+            <td>Ocean Jet</td>
+            <td>Bohol(Tagbilaran)</td>
+        </tr>
+        <tr>
+            <td>Dumaguete</td>
+            <td>12:50</td>
+            <td>Ocean Jet</td>
+            <td>Siquijor</td>
+        </tr>
+    </table>
+    <a href="https://www.facebook.com/" target="_blank"><img src="food.jpg"></a>
+    
+<div class="gallery">
+    <a target="_blank" href="https://www.facebook.com/">
+      <img src="pic1.jpg" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+  
+  <div class="gallery">
+    <a target="_blank" href="https://www.facebook.com/">
+      <img src="pic2.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+  
+  <div class="gallery">
+    <a target="_blank" href="https://www.facebook.com/">
+      <img src="pic3.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+  
+  <div class="gallery">
+    <a target="_blank" href="https://www.facebook.com/">
+      <img src="pic4.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+              <!---->     
+                  <div class="tastings-row">
+                    <span class="item date">Friday - 3pm</span>
+                    <span class="item city">Yountville</span>
+                    <span class="item destination">JCB Tasting Salon</span>
+                    <button class="click item tastings-click primary-click" type="button"><a href="https://jcbcollection.com/location/tasting-salon-yountville/" target="_blank">Reserve Now</a></button>
+                  </div>
+                  <div class="tastings-row">
+                    <span class="item date">Friday - 7pm</span>
+                    <span class="item city">Yountville</span>
+                    <span class="item destination">Bistro Jeanty</span>
+                    <button class="click item tastings-click primary-click" type="button"><a href="https://bistrojeanty.com/" target="_blank">Reserve Now</a></button>
+                  </div>
+                  <div class="tastings-row">
+                    <span class="item date">Saturday - 10am</span>
+                    <span class="item city">St. Helena</span>
+                    <span class="item destination">Schweiger Vineyards</span>
+                    <button class="click item tastings-click primary-click" type="button"><a href="https://www.schweigervineyards.com/wine-tasting/" target="_blank">Reserve Now</a></button>
+                  </div> 
+                  <div class="tastings-row">
+                    <span class="item date">Saturday - 11:45am</span>
+                    <span class="item city">St. Helena</span>
+                    <span class="item destination">Farmstead</span>
+                    <button class="click item tastings-click primary-click" type="button"><a href="https://www.longmeadowranch.com/eat-drink/restaurant/" target="_blank">Reserve Now</a></button>
+                  </div>
+                  <div class="tastings-row">
+                    <span class="item date">Saturday - 1:30pm</span>
+                    <span class="item city">St. Helena</span>
+                    <span class="item destination">Salvestrin Winery</span>
+                    <button class="click item tastings-click primary-click" type="button"><a href="https://www.salvestrinwinery.com/visit/" target="_blank">Reserve Now</a></button>
+                  </div>
+                  <div class="tastings-row">
+                    <span class="item date">Saturday - 3:15pm</span>
+                    <span class="item city">Rutherford</span>
+                    <span class="item destination">Frog's Leap Winery</span>
+                    <button class="click item tastings-click primary-click" type="button"><a href="https://www.frogsleap.com/visit.php" target="_blank">Reserve Now</a></button>
+                  </div>
+                  <div class="tastings-row">
+                    <span class="item date">Sunday - 10am</span>
+                    <span class="item city">Napa</span>
+                    <span class="item destination">Domaine Carneros</span>
+                    <button class="click item tastings-click primary-click" type="button"><a href="https://www.domainecarneros.com/visit" target="_blank">Reserve Now</a></button>
+                  </div>
+                  <div class="tastings-row">
+                    <span class="item date">Sunday - 11:45am</span>
+                    <span class="item city">Napa</span>
+                    <span class="item destination">Boon Fly Cafe</span>
+                    <button class="click item tastings-click primary-click" type="button"><a href="https://www.boonflycafe.com/" target="_blank">Reserve Now</a></button>
+                  </div>
+                  <div class="tastings-row">
+                    <span class="item date">Sunday - 1:30pm</span>
+                    <span class="item city">Napa</span>
+                    <span class="item destination">Hendry Winery</span>
+                    <button class="click item tastings-click primary-click" type="button"><a href="https://www.hendrywines.com/visit/" target="_blank">Reserve Now</a></button>
+                  </div>  
+                </div>  
+              </section>
+              <footer class="main-footer">
+                <div class="container main-footer-container">
+                <h3 class="name">Napa Valley Liaisons</h3>
+                  <ul class="nav footer-nav">
+                    <li>
+                      <a href="https://www.facebook.com" target="_blank" class="fa fa-facebook"></a>
+                    </li>
+                    <li>
+                     <a href="https://www.youtube.com" target="_blank" class="fa fa-youtube"></a>
+                    </li>
+                    <li>
+                      <a href="https://www.twitter.com" target="_blank" class="fa fa-twitter"></a>
+                    </li>
+                  </ul> 
+                </div> 
+              
+              
+                
+                <h2>Responsive Image with Transparent Text</h2>
+                
+                <div class="xy">
+                
+                  <div class="content">
+                    <h1>Heading</h1>
+                    <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei.</p>
+                  </div>
+                </div>
+</body>
+</html>
